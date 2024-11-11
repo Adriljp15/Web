@@ -1,0 +1,40 @@
+/* Base styles for the body */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 200vh; /* Enable scrolling */
+    background-color: #f0f0f0;
+}
+
+/* Container for centered content */
+.container {
+    text-align: center;
+    padding: 50px;
+}
+
+/* Box styling */
+.box {
+    width: 200px;
+    height: 200px;
+    background-color: #3498db;
+    color: #ffffff; /* Use hex for consistency */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 50px auto;
+    opacity: 0; /* Start hidden */
+    transform: translateY(50px); /* Start slightly below */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out; /* Smooth transitions */
+}
+
+/* Box visibility state */
+.box.visible {
+    opacity: 1; /* Fade in */
+    transform: translateY(0); /* Move to original position */
+}
+
+/* Spacer for scrolling effect */
+.spacer {
+    height: 150vh; /* Space to scroll */
+}
